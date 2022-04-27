@@ -1,0 +1,206 @@
+body {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  height: 100%;
+  width: 100%;
+}
+body input::-webkit-input-placeholder {
+  color: rgba(50, 50, 50, 0.4);
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body > h1 {
+  position: relative;
+  top: 120px;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50px;
+  font-size: 25px;
+  user-select: none;
+  color: peru;
+  text-shadow: 0 0 8px peru;
+  animation: shadow_move 8s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes shadow_move {
+  0% {
+    box-shadow: 0 0 0 0 #b0ded5;
+  }
+  100% {
+    box-shadow: 0 0 10px 10px #b0ded5;
+  }
+}
+body .login {
+  position: relative;
+  top: 220px;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  user-select: none;
+  border-radius: 20px;
+}
+body .login .title {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px white;
+  user-select: none;
+}
+body .login .username,
+body .login .pwd {
+  width: 60%;
+  height: 40px;
+  border-bottom: 2px solid white;
+  margin: 15px auto 0;
+  line-height: 40px;
+}
+body .login .username span,
+body .login .pwd span {
+  float: left;
+  width: 30px;
+  text-align: center;
+  color: bisque;
+  cursor: default;
+  user-select: none;
+}
+body .login .username input,
+body .login .pwd input {
+  float: left;
+  outline: none;
+  height: 40px;
+  width: 240px;
+  background-color: transparent;
+  color: #000000;
+  padding-left: 10px;
+}
+body .login .more {
+  height: 20px;
+  width: 60%;
+  margin: 5px auto;
+  color: rgba(0, 0, 0, 0.4);
+}
+body .login .more .remember {
+  float: left;
+  margin: 3px 0 0 8px;
+}
+body .login .more span {
+  float: left;
+  margin-left: 3px;
+}
+body .login .more a {
+  float: right;
+  color: rgba(0, 0, 0, 0.4);
+}
+body .login .btn {
+  width: 100px;
+  height: 40px;
+  border: 4px solid peru;
+  border-radius: 20px;
+  background-color: transparent;
+  margin-top: 20px;
+  box-shadow: 0px 0px 2px 2px peru;
+  color: white;
+  font-weight: 700px;
+  font-size: 16px;
+}
+body .login .btn:hover {
+  color: chocolate;
+  transform: translateY(-1px);
+}
+body .bearbox {
+  position: relative;
+  width: 90%;
+  height: 10px;
+  margin: 148px auto 0;
+}
+body .bear {
+  position: absolute;
+  top: 220px;
+  width: 20px;
+  height: 10px;
+  background: url(../../images/bear.png);
+  background-size: 160px 10px;
+  animation: bear 1s steps(8) infinite, movebear 80s linear forwards;
+}
+@keyframes bear {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -160px 0;
+  }
+}
+@keyframes movebear {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 99%;
+  }
+}
+@keyframes movebox {
+  0% {
+    width: 8px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+body .move {
+  position: relative;
+  top: 220px;
+  width: 90%;
+  height: 4px;
+  margin: 0 auto;
+  border: 1px solid chocolate;
+  border-radius: 1px;
+  box-shadow: 0 0 2px 2px chocolate;
+}
+body .move .movebox {
+  width: 0;
+  height: 100%;
+  background-color: chocolate;
+  animation: movebox 80s linear forwards;
+}

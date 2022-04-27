@@ -1,0 +1,20 @@
+body {
+  background-color: beige;
+}
+body form {
+  width: 80%;
+  margin: 0 auto;
+  border: 10px solid pink;
+  border-radius: 10px;
+}
+body form table {
+  height: 800px;
+  width: 100%;
+}
+body form table,
+body form th,
+body form td {
+  border-collapse: collapse;
+  border: 2px solid red;
+  text-align: center;
+}
